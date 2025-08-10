@@ -1,0 +1,2 @@
+# WebNokosFree
+Prank Ransomware
