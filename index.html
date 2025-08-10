@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prank Ransomware</title>
+<style>
+  @keyframes fastGlowBlink {
+    0%, 100% {
+      background-color: rgba(255, 0, 0, 0.6);
+      box-shadow: 0 0 15px 8px rgba(255, 0, 0, 0.8);
+    }
+    50% {
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: none;
+    }
+  }
+
+  body {
+    margin: 0;
+    background: url('https://l.top4top.io/p_3509r5mna3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    color: red;
+    overflow: hidden;
+  }
+
+  /* Overlay dengan animasi kelap-kelip cepat dan bercahaya */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 0, 0, 0.6);
+    box-shadow: 0 0 15px 8px rgba(255, 0, 0, 0.8);
+    pointer-events: none;
+    animation: fastGlowBlink 0.6s infinite;
+    z-index: 0;
+  }
+
+  /* Konten di atas overlay */
+  .content {
+    position: relative;
+    z-index: 1;
+    backdrop-filter: brightness(0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+  input[type="password"] {
+    font-size: 1.2em;
+    padding: 0.7em;
+    width: 220px;
+    border-radius: 5px;
+    border: 2px solid red;
+    text-align: center;
+    margin-bottom: 1em;
+    outline: none;
+  }
+  input[type="password"]:focus {
+    border-color: darkred;
+  }
+  button {
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: 0.5em;
+    background: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: darkred;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <a href="https://b.top4top.io/p_35084440d5.jpg" target="_blank" rel="noopener">
+    <img src="https://b.top4top.io/p_35084440d5.jpg" alt="Foto Profil" class="profile-pic" />
+  </a>
+
+  <h1>FILE ENCRYPTED</h1>
+  <p>Send 20jt untuk buka kunci<br /><br />Hacked By Reyz4You Official</p>
+
+  <form id="pinForm" onsubmit="handlePin(event)">
+    <input type="password" id="pinInput" placeholder="Masukkan PIN" maxlength="6" required />
+    <br />
+    <button type="submit">Submit PIN</button>
+  </form>
+
+  <div>
+    <button onclick="window.open('https://wa.me/6281234567890', '_blank')">Contact WA</button>
+  </div>
+</div>
+
+<audio id="ransomSound" autoplay loop>
+  <source src="https://k.top4top.io/m_3509w25yr5.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  function handlePin(event) {
+    event.preventDefault();
+    const pin = document.getElementById('pinInput').value;
+    if(pin === '123456') {
+      alert('PIN benar! Tapi ini cuma prank ya :)');
+    } else {
+      alert('PIN salah! Coba lagi.');
+    }
+    document.getElementById('pinInput').value = '';
+  }
+</script>
+</body>
+</html>
